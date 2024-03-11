@@ -1,0 +1,15 @@
+.addBook {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 40vw;
+  height: 50vh;
+  position: fixed;
+  top: 175px;
+  z-index: 1;
+  left: 450px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 30px;
+}
