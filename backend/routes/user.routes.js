@@ -5,5 +5,4 @@ const { verifyToken } = require('../middleware/auth')
 router.get('/users', verifyToken, userController.getAllusers)
 router.get('/searchUser', verifyToken, userController.searchUser)
 
-
 module.exports = router 

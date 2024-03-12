@@ -11,7 +11,4 @@ router.delete('/book/:bookId', verifyToken, booksController.deleteBook)
 router.get('/books', verifyToken, booksController.getAllBooks)
 router.get('/searchBooks', verifyToken, booksController.searchBooks)
 
-
-
-
 module.exports = router 

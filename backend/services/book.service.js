@@ -7,8 +7,10 @@ exports.addBook = async (req) => {
         console.log(req.body)
         const userId = req.id
         console.log(userId)
+
         const admin = await Users.find({ _id: userId })
         console.log(admin)
+        
         const role = admin.map((i) => i.role)
         console.log(role[0])
 
