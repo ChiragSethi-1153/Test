@@ -4,6 +4,7 @@ import UserLogin from '../pages/UserLogin/UserLogin'
 import UserSignup from '../pages/UserSignup/UserSignup'
 import Home from '../pages/Home/Home'
 import Dashboard from '../pages/Dashboard/Dashboard'
+import PrivateRoutes from './PrivateRoutes'
 
 const Routing = () => {
   return (
@@ -11,8 +12,10 @@ const Routing = () => {
         <Route path='/' element={<UserLogin />} />
         <Route path='/login' element={<UserLogin />} />
         <Route path='/signup' element={<UserSignup />} />
-        <Route path='/home' element={<Home />} />
-        <Route path='/dashboard' element={<Dashboard />} />
+        <Route element={<PrivateRoutes />}>
+          <Route path='/home' element={<Home />} />
+          <Route path='/dashboard' element={<Dashboard />} />
+        </Route>
 
     </Routes>
   )
